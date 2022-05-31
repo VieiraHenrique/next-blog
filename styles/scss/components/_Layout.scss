@@ -1,0 +1,58 @@
+.Layout {
+    .header {
+        @include container($laptop13);
+        height: 120px;
+        background-color: rgb(64, 66, 78);
+
+        * {
+            color: #fff;
+        }
+
+        .wrapper {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 40px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            a {
+                padding: 2px 0;
+                cursor: pointer;
+                &:hover {
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+    }
+
+    .main {
+        @include container($laptop13);
+    }
+
+    .footer {
+        height: 80px;
+        background-color: rgb(64, 66, 78);
+        @include container($ipad);
+
+        .wrapper {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            text-align: center;
+            color: #fff;
+        }
+    }
+}
