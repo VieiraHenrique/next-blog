@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState, useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
+
 export default function Account() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
